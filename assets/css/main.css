@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 23% 95%;
+    /* --foreground-primary: 0 0% 9%;
+    --foreground-secondary: 240 14% 35%; */
+
+    --primary: 215 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 221, 23%, 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --destructive: 1 85% 53%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border-dark: 220 24% 82%;
+    --border-light: 0 0% 90%;
+    --grey-light: 220 23% 95%;
+    --input: 220 13% 91%;
+
+    --ring: 224 71.4% 4.1%;
+
+    /* customize */
+
+    --text-primary: 0, 0%, 9%;
+    --text-primary-foreground: 0 0% 100%;
+
+    --text-secondary: 240, 14%, 35%;
+    --text-secondary-foreground: 0 0% 100%;
+
+    --favorite: 335, 100%, 50%;
+    --favorite-foreground: 0 0% 100%;
+
+    --border: 0, 0%, 85%;
+    --border-heavy: 0, 0%, 77%;
+
+    --light: 220, 23%, 95%;
+
+    --white: 0, 0%, 100%;
+
+    /* Chart */
+    --vis-primary-color: var(--primary);
+    /* change to any hsl value you want */
+    --vis-secondary-color: 160 81% 40%;
+    --vis-text-color: var(--secondary);
+  }
+}
+
+/* Explanation:
+   This code block is using Tailwind CSS's @layer directive to add styles to the base layer.
+   
+   1. @layer base { ... }: This directive is used to add custom styles to Tailwind's base layer,
+      which is typically used for default element styles.
+
+   2. The commented-out code inside the block:
+      * { @apply border-dark; }
+      If uncommented, this would apply a dark border to all elements on the page.
+      The '*' selector targets every element.
+      '@apply border-dark' is a Tailwind directive that applies the 'border-dark' utility class.
+
+   3. The code is currently commented out, which means it's not active.
+      This could be intentional, perhaps left as a reference or for future use.
+
+   4. The 'border-dark' class likely refers to a custom color defined in the :root section above,
+      specifically the '--border-dark: 220 24% 82%;' variable.
+
+   In summary, this block is set up to potentially add a dark border to all elements,
+   but it's currently inactive due to being commented out.
+*/
+@layer base {
+  /* * {
+    @apply border-dark;
+  } */
+}
+
+.router-link {
+  @apply font-semibold text-foreground opacity-30;
+
+  svg {
+    @apply fill-none stroke-foreground text-foreground;
+  }
+}
+
+.router-link-active,
+.router-link-exact-active {
+  @apply font-semibold text-foreground opacity-100 before:absolute before:left-0 before:h-5 before:w-1 before:bg-primary;
+
+  svg {
+    @apply fill-none stroke-foreground text-foreground;
+  }
+}
+
+.router-link:hover {
+  @apply opacity-50;
+}
+
+.router-link-active:hover,
+.router-link-exact-active:hover {
+  @apply opacity-90;
+}
+
+.text-muted {
+  color: lightgrey;
+}
