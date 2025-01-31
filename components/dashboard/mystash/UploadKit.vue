@@ -13,7 +13,7 @@
     <!-- upload img -->
     <div class="flex w-1/3 flex-col items-center gap-9">
       <div class="flex h-80 w-full flex-col items-center gap-32 rounded-xl bg-[#EFF1F5]">
-        <img class="pt-32" :src="`/img/dashboard/svg/img.svg`" />
+        <img class="pt-32" :src="`/dashboard/svg/img.svg`" />
         <CustomButton class="" variant="default">Add Cover</CustomButton>
       </div>
       <CustomButton class="border" variant="ghost">

@@ -6843,10 +6843,10 @@ quickselect@^2.0.0:
   resolved "https://registry.npmjs.org/quickselect/-/quickselect-2.0.0.tgz"
   integrity sha512-RKJ22hX8mHe3Y6wH/N3wCM6BWtjaxIyyUIkpHOvfFnxdI4yD4tBXEBKSbriGujF6jnSVkJrffuo6vxACiSSxIw==
 
-radix-vue@^1.9.12:
-  version "1.9.12"
-  resolved "https://registry.npmjs.org/radix-vue/-/radix-vue-1.9.12.tgz"
-  integrity sha512-zkr66Jqxbej4+oR6O/pZRzyM/VZi66ndbyIBZQjJKAXa1lIoYReZJse6W1EEDZKXknD7rXhpS+jM9Sr23lIqfg==
+radix-vue@^1.9.13:
+  version "1.9.13"
+  resolved "https://registry.npmjs.org/radix-vue/-/radix-vue-1.9.13.tgz"
+  integrity sha512-wk0G69vRDU5TDmhYHZv5Y4j905CLfnvcsFB+CXAbXRuQIl5fUCmOWSOukKhj0MT9YRsW5ujZUjtDF0Ou/hg+8Q==
   dependencies:
     "@floating-ui/dom" "^1.6.7"
     "@floating-ui/vue" "^1.1.0"
@@ -7679,6 +7679,11 @@ svgo@^3.0.2, svgo@^3.2.0, svgo@^3.3.2:
     css-what "^6.1.0"
     csso "^5.0.5"
     picocolors "^1.0.0"
+
+swiper@^11.2.1:
+  version "11.2.1"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-11.2.1.tgz"
+  integrity sha512-62G69+iQRIfUqTmJkWpZDcX891Ra8O9050ckt1/JI2H+0483g+gq0m7gINecDqMtDh2zt5dK+uzBRxGhGOOvQA==
 
 synckit@^0.9.1:
   version "0.9.1"

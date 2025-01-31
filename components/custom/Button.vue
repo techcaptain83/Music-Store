@@ -16,13 +16,16 @@ const buttonVariants = cva(
         ghost: 'text-secondary hover:bg-secondary hover:text-secondary-foreground',
         outline: 'border border-input bg-background shadow-sm hover:bg-destructive hover:text-destructive-foreground',
         link: 'text-primary underline-offset-4 hover:underline',
+        m_default: 'bg-marketplace text-marketplace-foreground shadow hover:bg-marketplace/80',
+        m_ghost: 'text-marketplace hover:bg-white hover:text-black',
       },
       size: {
         default: 'h-9 rounded-full px-4 py-2',
         xs: 'h-7 rounded-full px-2',
         sm: 'h-8 rounded-full px-3 text-xs',
-        lg: 'h-10 rounded-full px-8',
-        icon: 'h-9 w-9 rounded-full',
+        lg: 'h-10 rounded-full px-6',
+        icon: 'h-9 w-9 rounded-full px-4',
+        icon_lg: 'h-12 w-12 rounded-full',
       },
     },
     defaultVariants: {
