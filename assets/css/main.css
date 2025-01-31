@@ -17,6 +17,9 @@
     --destructive: 1 85% 53%;
     --destructive-foreground: 0 0% 100%;
 
+    --marketplace: 0, 0%, 50%;
+    --marketplace-foreground: 0 0% 100%;
+
     --border-dark: 220 24% 82%;
     --border-light: 0 0% 90%;
     --grey-light: 220 23% 95%;
@@ -25,13 +28,6 @@
     --ring: 224 71.4% 4.1%;
 
     /* customize */
-
-    --text-primary: 0, 0%, 9%;
-    --text-primary-foreground: 0 0% 100%;
-
-    --text-secondary: 240, 14%, 35%;
-    --text-secondary-foreground: 0 0% 100%;
-
     --favorite: 335, 100%, 50%;
     --favorite-foreground: 0 0% 100%;
 
@@ -77,7 +73,9 @@
   } */
 }
 
-.router-link {
+/* dashboard css */
+
+.dashboard .router-link {
   @apply font-semibold text-foreground opacity-30;
 
   svg {
@@ -85,8 +83,8 @@
   }
 }
 
-.router-link-active,
-.router-link-exact-active {
+.dashboard .router-link-active,
+.dashboard .router-link-exact-active {
   @apply font-semibold text-foreground opacity-100 before:absolute before:left-0 before:h-5 before:w-1 before:bg-primary;
 
   svg {
@@ -94,15 +92,46 @@
   }
 }
 
-.router-link:hover {
+.dashboard .router-link:hover {
   @apply opacity-50;
 }
 
-.router-link-active:hover,
+.dashboard .router-link-active:hover,
 .router-link-exact-active:hover {
   @apply opacity-90;
 }
 
-.text-muted {
+.dashboard .text-muted {
+  color: lightgrey;
+}
+
+/* marketplace css */
+.marketplace .router-link {
+  @apply font-semibold text-white opacity-30;
+
+  svg {
+    @apply fill-none stroke-marketplace text-white;
+  }
+}
+
+.marketplace .router-link-active,
+.marketplace .router-link-exact-active {
+  @apply font-semibold text-white opacity-100 before:absolute before:left-0 before:h-5 before:w-1 before:bg-primary;
+
+  svg {
+    @apply fill-none stroke-marketplace text-white;
+  }
+}
+
+.marketplace .router-link:hover {
+  @apply opacity-50;
+}
+
+.marketplace .router-link-active:hover,
+.router-link-exact-active:hover {
+  @apply opacity-90;
+}
+
+.marketplace .text-muted {
   color: lightgrey;
 }

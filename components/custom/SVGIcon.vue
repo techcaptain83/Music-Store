@@ -6,24 +6,42 @@ interface IconComponentProps {
   size?: number
 }
 
+// Define props with default values
 const props = withDefaults(defineProps<IconComponentProps>(), {
   size: 20,
 })
 
-const dynamicSvg = ref(null)
+// Reactive reference for SVG content
+const svgContent = ref<string | null>(null)
 
-const importSvg = async (svgText: string) => {
-  console.log(svgText)
-  if (svgText) return await import(`/img/dashboard/icon/${svgText}`)
+// Function to fetch SVG content
+const fetchSvg = async (svgText: string) => {
+  try {
+    const response = await fetch(`/icon/${svgText}`)
+    if (!response.ok) {
+      throw new Error(`Failed to fetch SVG: ${response.statusText}`)
+    }
+    svgContent.value = await response.text()
+  } catch (error) {
+    console.error(error)
+    svgContent.value = null
+  }
 }
 
-onMounted(async () => (dynamicSvg.value = await importSvg(props.svg)))
+// On component mount, load the initial SVG
+onMounted(() => {
+  fetchSvg(props.svg)
+})
+
+// Watch for changes in the svg prop
 watch(
   () => props.svg,
-  async (svgText) => (dynamicSvg.value = await importSvg(svgText)),
+  (svgText) => {
+    fetchSvg(svgText)
+  },
 )
 </script>
 
 <template>
-  <component :is="dynamicSvg" v-if="dynamicSvg" class="fill-none" :width="size" :height="size" />
+  <div v-if="svgContent" v-html="svgContent" class="fill-none" :style="{ width: `${props.size}px`, height: `${props.size}px` }" />
 </template>

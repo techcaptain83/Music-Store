@@ -23,7 +23,3 @@ defineProps<{
   time: string
 }>()
 </script>
-
-<style>
-/* You can remove this style block if not needed */
-</style>

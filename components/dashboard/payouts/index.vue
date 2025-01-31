@@ -10,7 +10,7 @@
           dashboard.
         </p>
         <CustomButton class="mt-4 w-60 rounded-md bg-[#9333ea]">
-          <img src="/img/dashboard/svg/payouts.svg" alt="" />
+          <img src="/dashboard/svg/payouts.svg" alt="" />
           <CustomSVGIcon class="" svg="payouts" />
           | Connect Stripe account</CustomButton
         >

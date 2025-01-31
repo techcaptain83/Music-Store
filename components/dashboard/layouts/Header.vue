@@ -1,13 +1,13 @@
 <template>
   <nav class="fixed w-full md:relative md:h-24">
-    <div class="mx-auto flex items-stretch justify-between px-4 py-8 md:px-4 md:py-8">
+    <div class="px-7.5 py-7.5 md:px-7.5 md:py-7.5 mx-auto flex items-stretch justify-between">
       <!-- logo file -->
       <Logo />
 
       <div class="flex flex-row gap-8">
         <!-- favorite -->
         <NuxtLink to="/dashboard/favorites" class="font-inter flex flex-row items-center gap-1 text-base font-medium">
-          <img :src="`/img/dashboard/icon/heart.svg`" />
+          <img :src="`/dashboard/icon/heart.svg`" />
           <span class="flex-grow text-sm">Favorites</span>
         </NuxtLink>
 
