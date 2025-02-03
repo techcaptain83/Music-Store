@@ -166,8 +166,70 @@
     <!-- Contact -->
     <div>
       <div class="flex flex-col gap-6">
-        <div class="flex flex-row gap-6"></div>
-        <div></div>
+        <div class="flex flex-row gap-6">
+          <div class="relative w-1/3">
+            <img class="w-full" src="/marketplace/img/img_1.png" alt="" />
+            <div class="absolute left-[41px] top-[31px] flex flex-col gap-4">
+              <div class="font-inter text-semibold text-[38px] text-white">
+                Access all purchases &
+                <span class="text-primary">instant</span>
+                downloads
+              </div>
+              <div class="font-inter text-sm font-normal text-[#AFAFAF]">
+                After purchase, you can immediately access your packs and samples in your account. Enjoy instant availability of
+                your purchased content.
+              </div>
+            </div>
+          </div>
+          <div class="relative w-2/3">
+            <img class="w-full" src="/marketplace/img/img_2.png" alt="" />
+            <div class="absolute left-[52px] top-[89px] flex w-[35%] flex-col gap-4">
+              <div class="font-inter text-semibold text-[38px] text-white">
+                <span class="text-primary">Only quality</span>
+                from the industries leading producers!
+              </div>
+              <div class="font-inter text-base font-normal text-[#AFAFAF]">
+                After purchase, you can immediately access your packs and samples in your account. Enjoy instant availability of
+                your purchased content.
+              </div>
+              <CustomButton class="flex w-[147px] items-center">
+                SHOP KITS
+                <CustomSVGIcon svg="m-shop.svg" />
+              </CustomButton>
+            </div>
+          </div>
+        </div>
+        <div class="relative w-full">
+          <img class="w-full" src="/marketplace/img/img_3.png" alt="" />
+          <div class="absolute left-[56px] top-[111px] flex flex-row">
+            <div class="flex w-[38%] flex-col gap-4">
+              <div class="font-inter text-semibold text-[38px] text-white">
+                Don't Let Your Stash Run Dry! Get Alerts on
+                <span class="text-primary"> New Sound Packs!</span>
+              </div>
+              <div class="font-inter text-base font-normal text-[#AFAFAF]">
+                Join our exclusive mailing list and ensure your sound library is always stocked with the freshest packs and
+                samples. Get notified about exclusive releases and updates from The Sample Stash.
+              </div>
+            </div>
+            <div class="flex w-[53%] flex-col justify-center gap-4 px-32 pt-8">
+              <div class="font-inter px-6 text-base font-semibold text-white">Your Email</div>
+              <div class="relative">
+                <Input id="email" type="text" class="h-[60px] rounded-full" />
+                <CustomButton
+                  class="font-[Euclid Circular B ] absolute right-2 top-3 flex items-center text-base font-semibold text-white"
+                >
+                  JOIN NEWSLETTER
+                  <CustomSVGIcon svg="m-email.svg" />
+                </CustomButton>
+              </div>
+              <div class="font-inter px-6 text-sm font-normal text-[#AFAFAF]">
+                Your privacy is our priority. We'll never sell your data, and it's used exclusively for The Sample Stash updates.
+                Unsubscribe anytime.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
