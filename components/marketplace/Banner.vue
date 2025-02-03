@@ -1,48 +1,62 @@
 <template>
-  <swiper
-    class=""
-    :modules="modules"
-    :slides-per-view="1"
-    :space-between="50"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
-    :loop="true"
-    :navigation="true"
-    :pagination="{
-      enabled: true,
-    }"
-    :centeredSlides="true"
-    :breakpoints="{
-      '320': {
-        slidesPerView: 1.2,
-        spaceBetween: 5,
-      },
-      '640': {
-        slidesPerView: 1.2,
-        spaceBetween: 5,
-      },
-      '820': {
-        slidesPerView: 1.2,
-        spaceBetween: 10,
-      },
-      '1035': {
-        slidesPerView: 1.2,
-        spaceBetween: 10,
-      },
-      '1240': {
-        slidesPerView: 1.2,
-        spaceBetween: 10,
-      },
-      '1440': {
-        slidesPerView: 1.4,
-        spaceBetween: 10,
-      },
-    }"
-  >
-    <swiper-slide v-for="(slide, index) in slides" :key="index">
-      <img :src="slide" alt="" class="rounded-md" />
-    </swiper-slide>
-  </swiper>
+  <div class="relative">
+    <swiper
+      :slidesPerView="3"
+      :spaceBetween="5"
+      :modules="modules"
+      @swiper="onSwiper"
+      @slideChange="onSlideChange"
+      :loop="true"
+      :navigation="true"
+      :pagination="{
+        clickable: true,
+      }"
+      :centeredSlides="true"
+      :breakpoints="{
+        '320': {
+          slidesPerView: 1.2,
+          spaceBetween: 5,
+        },
+        '640': {
+          slidesPerView: 1.2,
+          spaceBetween: 5,
+        },
+        '820': {
+          slidesPerView: 1.2,
+          spaceBetween: 5,
+        },
+        '1035': {
+          slidesPerView: 1.4,
+          spaceBetween: 5,
+        },
+        '1240': {
+          slidesPerView: 1.4,
+          spaceBetween: 5,
+        },
+        '1440': {
+          slidesPerView: 1.4,
+          spaceBetween: 5,
+        },
+      }"
+    >
+      <swiper-slide v-for="(slide, index) in slides" :key="index">
+        <div class="relative">
+          <img :src="slide" alt="" class="rounded-md" />
+          <div
+            class="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-9"
+          >
+            <div class="font-inter text-[64px] font-bold text-white">After Hours</div>
+            <div class="font-inter flex flex-col items-center text-center text-2xl font-normal text-white">
+              An eclectic mix or smooth jazz sounds to encourage the
+              <br />
+              ever loving baby making process
+            </div>
+            <CustomButton class="h-[68px] text-xl font-semibold">BROWSER PACK</CustomButton>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper>
+  </div>
 </template>
 
 <script setup lang="ts">

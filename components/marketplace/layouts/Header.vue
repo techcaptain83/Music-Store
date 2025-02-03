@@ -42,7 +42,7 @@
       <div class="text-marketplace">|</div>
       <!-- Shop -->
       <nuxt-link to="/marketplace/shopping">
-        <Icon name="ci:shopping-bag-01" class="h-6 w-6" style="color: #ffffff" />
+        <CustomSVGIcon svg="m-shop.svg" />
       </nuxt-link>
     </div>
   </nav>

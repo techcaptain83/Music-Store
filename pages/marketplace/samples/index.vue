@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col gap-6">
     <!-- sample nav -->
     <MarketplaceTab :tabs="['All', 'Samples', 'Kits']" :current-tab="currentTab" @onClickTab="onClickTab">
       <div class="grid w-full grid-cols-4 gap-4" v-if="currentTab === 'All'">
@@ -33,28 +33,21 @@
         />
       </div>
     </MarketplaceTab>
-
     <!-- search box -->
-    <div class="relative mb-8 mt-12 w-full max-w-sm items-center">
-      <Input id="search" type="text" placeholder="Search..." class="bg-[#111111] pl-10" />
-      <span class="absolute inset-y-0 start-0 flex items-center justify-center px-2">
-        <Search class="text-muted-foreground size-6" />
-      </span>
-    </div>
+    <MarketplaceSearch> </MarketplaceSearch>
     <!-- records -->
-    <MarketplaceRecord
-      img="/marketplace/frame/16.png"
-      title="SLS_SS_85_music_loop_resampled_soul_climax_Abmin.wav"
-      producer="Brian Connor"
-      v-for="i in 10"
-      :key="i"
-    />
+    <div class="flex flex-col gap-4">
+      <MarketplaceRecord
+        img="/marketplace/frame/16.png"
+        title="SLS_SS_85_music_loop_resampled_soul_climax_Abmin.wav"
+        producer="Brian Connor"
+        v-for="i in 10"
+        :key="i"
+      />
+    </div>
   </div>
 </template>
 <script setup lang="ts">
-import { Input } from '@/components/ui/input'
-import { Search } from 'lucide-vue-next'
-
 definePageMeta({
   layout: 'marketplace',
 })

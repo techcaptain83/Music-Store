@@ -8,7 +8,7 @@ interface IconComponentProps {
 
 // Define props with default values
 const props = withDefaults(defineProps<IconComponentProps>(), {
-  size: 20,
+  size: 24,
 })
 
 // Reactive reference for SVG content
@@ -43,5 +43,10 @@ watch(
 </script>
 
 <template>
-  <div v-if="svgContent" v-html="svgContent" class="fill-none" :style="{ width: `${props.size}px`, height: `${props.size}px` }" />
+  <div
+    v-if="svgContent"
+    v-html="svgContent"
+    class="flex items-center fill-none"
+    :style="{ width: `${props.size}px`, height: `${props.size}px` }"
+  />
 </template>
