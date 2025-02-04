@@ -5,8 +5,6 @@
 @layer base {
   :root {
     --background: 220 23% 95%;
-    /* --foreground-primary: 0 0% 9%;
-    --foreground-secondary: 240 14% 35%; */
 
     --primary: 215 100% 50%;
     --primary-foreground: 0 0% 100%;
@@ -20,16 +18,15 @@
     --marketplace: 0, 0%, 50%;
     --marketplace-foreground: 0 0% 100%;
 
+    --favorite: 335, 100%, 50%;
+    --favorite-foreground: 0 0% 100%;
+
     --border-dark: 220 24% 82%;
     --border-light: 0 0% 90%;
     --grey-light: 220 23% 95%;
     --input: 220 13% 91%;
 
     --ring: 224 71.4% 4.1%;
-
-    /* customize */
-    --favorite: 335, 100%, 50%;
-    --favorite-foreground: 0 0% 100%;
 
     --border: 0, 0%, 85%;
     --border-heavy: 0, 0%, 77%;

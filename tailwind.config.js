@@ -36,10 +36,6 @@ module.exports = {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
         },
-        marketplace: {
-          DEFAULT: 'hsl(var(--marketplace))',
-          foreground: 'hsl(var(--marketplace-foreground))',
-        },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
@@ -47,6 +43,14 @@ module.exports = {
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
+        },
+        marketplace: {
+          DEFAULT: 'hsl(var(--marketplace))',
+          foreground: 'hsl(var(--marketplace-foreground))',
+        },
+        favorite: {
+          DEFAULT: 'hsl(var(--favorite))',
+          foreground: 'hsl(var(--favorite-foreground))',
         },
         border: {
           dark: 'hsl(var(--border-dark))',

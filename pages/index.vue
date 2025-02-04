@@ -1,10 +1,3 @@
-<script setup lang="ts">
-// definePageMeta({
-//   layout: 'marketplace',
-//   name: 'Homepage',
-// })
-</script>
-
 <template>
   <div>
     <nuxt-link to="/marketplace">marketplace</nuxt-link>
@@ -12,3 +5,6 @@
     <nuxt-link to="/dashboard">dashboard</nuxt-link>
   </div>
 </template>
+<script setup lang="ts">
+
+</script>
